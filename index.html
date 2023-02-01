@@ -252,17 +252,19 @@
       hm.src = "https://hm.baidu.com/hm.js?e91bd7214bcbfc0ddd4c8f9e60453d7f";
       var s = document.getElementsByTagName("script")[0]; 
       s.parentNode.insertBefore(hm, s);
+
+      const gitalk = new Gitalk({
+        clientID: '085dd85605dcd3f627e6',
+        clientSecret: '81a557cf600cf8946b79c080f80072af5e9aa447',
+        repo: 'docsify-note-01',
+        owner: 'mg0324',
+        admin: ['mg0324'],
+        distractionFreeMode: false,
+        id:decodeURI(window.location.pathname)
+      });
+      gitalk.render('gitalk-container')
     })();
-    const gitalk = new Gitalk({
-      clientID: '085dd85605dcd3f627e6',
-      clientSecret: '81a557cf600cf8946b79c080f80072af5e9aa447',
-      repo: 'docsify-note-01',
-      owner: 'mg0324',
-      admin: ['mg0324'],
-      distractionFreeMode: false,
-      id:decodeURI(window.location.pathname)
-    });
-    gitalk.render('gitalk-container')
+    
     </script>
     
 </body>
