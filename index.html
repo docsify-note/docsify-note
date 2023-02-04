@@ -40,91 +40,91 @@
       border-left-color: rgba(0, 0, 0, 0.07);
       border-image-slice: 1;
       padding-left: 5px;
-      right: 100px;
+      right: 50px;
       z-index: 99999;
       background: #fff;
     }
 
-  .page_toc code {
-    background-color: #f8f8f8;
-    border-radius: 2px;
-    color: #e96900;
-    font-family: 'Roboto Mono', Monaco, courier, monospace;
-    font-size: 0.8rem;
-    margin: 0 2px;
-    padding: 3px 5px;
-  }
-
-  .page_toc p.title {
-    margin: 0px 0 0px 9px;
-    padding-bottom: 5px;
-    font-weight: 600;
-    font-size: 1.2em;
-  }
-  .page_toc .anchor:hover:after {
-    content: "";
-  }
-
-  .page_toc ul {
-    list-style-type: none;
-    margin-top: 0px;
-    padding-left: 10px;
-    color: var(--text-color-base, black);
-    text-decoration: none;
-    font-weight: 300;
-    line-height: 1.6em;
-  }
-
-  .page_toc ul a:hover span {
-    color: var(--text-color-tertiary, #42b983);
-    border-bottom: none !important;
-    text-decoration:none !important;
-  }
-
-  .page_toc ul a {
-    color: var(--text-color-base, black);
-    text-decoration: none;
-    font-weight: 300;
-    line-height: 1.6em;
-  }
-
-  @media screen and (max-width: 1300px) {
-    .page_toc {
-      position: relative;
-      left: 0;
-      top: -20px;
-      padding: 10px 0;
-      border: none;
-      border-bottom: 1px solid #ddd;
-      font-size: 1.0em;
-      right: 100px;
-      z-index: 99999;
-      background: #fff;
+    .page_toc code {
+      background-color: #f8f8f8;
+      border-radius: 2px;
+      color: #e96900;
+      font-family: 'Roboto Mono', Monaco, courier, monospace;
+      font-size: 0.8rem;
+      margin: 0 2px;
+      padding: 3px 5px;
     }
-    .page_toc a:before {
-      content: "- ";
-    }
-    .nav {
-      margin: 0 auto;
-      width: 800px;
-    }
+
     .page_toc p.title {
-      font-weight: 300;
-      font-size: 1.8em;
+      margin: 0px 0 0px 9px;
+      padding-bottom: 5px;
+      font-weight: 600;
+      font-size: 1.2em;
     }
-    .content {
-      display: block;
+    .page_toc .anchor:hover:after {
+      content: "";
     }
-    .markdown-section {
-      margin: 0 auto;
-    }
-  }
 
-  .page_toc .active {
-    border-left: 5px solid;
-    color: var(--theme-color, #42b983);
-    padding-left: 10px;
-  }
+    .page_toc ul {
+      list-style-type: none;
+      margin-top: 0px;
+      padding-left: 10px;
+      color: var(--text-color-base, black);
+      text-decoration: none;
+      font-weight: 300;
+      line-height: 1.6em;
+    }
+
+    .page_toc ul a:hover span {
+      color: var(--text-color-tertiary, #42b983);
+      border-bottom: none !important;
+      text-decoration:none !important;
+    }
+
+    .page_toc ul a {
+      color: var(--text-color-base, black);
+      text-decoration: none;
+      font-weight: 300;
+      line-height: 1.6em;
+    }
+
+    @media screen and (max-width: 1300px) {
+      .page_toc {
+        position: relative;
+        left: 0;
+        top: -20px;
+        padding: 10px 0;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        font-size: 1.0em;
+        right: 50px;
+        z-index: 99999;
+        background: #fff;
+      }
+      .page_toc a:before {
+        content: "- ";
+      }
+      .nav {
+        margin: 0 auto;
+        width: 800px;
+      }
+      .page_toc p.title {
+        font-weight: 300;
+        font-size: 1.8em;
+      }
+      .content {
+        display: block;
+      }
+      .markdown-section {
+        margin: 0 auto;
+      }
+    }
+
+    .page_toc .active {
+      border-left: 5px solid;
+      color: var(--theme-color, #42b983);
+      padding-left: 10px;
+    }
   </style>
   <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
   <!--[if lt IE 9]>
@@ -133,7 +133,6 @@
   <![endif]-->
 </head>
 <body>
-  
   <div id="app">
     
   </div>
