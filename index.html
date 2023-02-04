@@ -37,14 +37,20 @@
   <![endif]-->
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">
+
+    
+  </div>
+  
   <div id="gitalk-container"></div>
   <script>
     window.$docsify = {
       name: 'docsify-note',
       repo: 'https://gitee.com/mgang/docsify-note.git',
       coverpage: false,
-      loadNavbar: true,
+      //loadNavbar: true,
+      loadNavbar: false,
+      changelog : 'CHANGELOG.md',
       loadSidebar: true,
       autoHeader: true,
       onlyCover: false,
@@ -242,6 +248,25 @@
 
   <script src="//unpkg.com/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
 
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-changelog-plugin@latest/dist/style.css"/>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-changelog-plugin@latest/dist/index.js"></script>
+
+  <script src="https://giscus.app/client.js"
+        data-repo="mg0324/docsify-note-01"
+        data-repo-id="R_kgDOI4bELQ"
+        data-category="General"
+        data-category-id="DIC_kwDOI4bELc4CT_Sv"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
   <script>
     var _hmt = _hmt || [];
     (function() {
