@@ -13,3 +13,4 @@
 11. 集成docsify-pangu插件，自动在中文和英文间隔空格。
 12. 集成docsify-kroki插件，支持全热门图形化语言，如plantuml、mermaid等。
 13. demo页新增嵌入mp3示例。
+14. 将示例demo页内容分为基础示例和高级示例，处理左侧sidebar重复的问题。
