@@ -1,3 +1,1 @@
-
-
-[rmd](https://mg.meiflower.top/skill/front/all.md)
+[rmd](https://raw.githubusercontent.com/mg0324/my-project/master/home-docsify/skill/front/all.md)
