@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <meta name="renderer" content="webkit">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <style type="stylesheet">
+  <style>
     .markdown-section iframe {
       border: 1px solid #eee;
       min-width: 0 !important;
@@ -25,105 +25,9 @@
       left: 15px !important;
       bottom: 15px !important;
     }
-    .my-img{
-      text-align: left;
-      border: 1px solid #ddd;
-    }
     .markdown-section {
       flex: 1 1 0%;
       margin: 0 48px;
-    }
-    .page_toc {
-      position: fixed;
-      border-left-style: solid;
-      border-left-width: 1px;
-      border-left-color: rgba(0, 0, 0, 0.07);
-      border-image-slice: 1;
-      padding-left: 5px;
-      right: 36px;
-      z-index: 99999;
-      background: #fff;
-    }
-
-    .page_toc code {
-      background-color: #f8f8f8;
-      border-radius: 2px;
-      color: #e96900;
-      font-family: 'Roboto Mono', Monaco, courier, monospace;
-      font-size: 0.8rem;
-      margin: 0 2px;
-      padding: 3px 5px;
-    }
-
-    .page_toc p.title {
-      margin: 0px 0 0px 9px;
-      padding-bottom: 5px;
-      font-weight: 600;
-      font-size: 1.2em;
-    }
-    .page_toc .anchor:hover:after {
-      content: "";
-    }
-
-    .page_toc ul {
-      list-style-type: none;
-      margin-top: 0px;
-      padding-left: 10px;
-      color: var(--text-color-base, black);
-      text-decoration: none;
-      font-weight: 300;
-      line-height: 1.6em;
-    }
-
-    .page_toc ul a:hover span {
-      color: var(--text-color-tertiary, #42b983);
-      border-bottom: none !important;
-      text-decoration:none !important;
-    }
-
-    .page_toc ul a {
-      color: var(--text-color-base, black);
-      text-decoration: none;
-      font-weight: 300;
-      line-height: 1.6em;
-    }
-
-    @media screen and (max-width: 1300px) {
-      .page_toc {
-        position: relative;
-        left: 0;
-        top: -20px;
-        padding: 10px 0;
-        border: none;
-        border-bottom: 1px solid #ddd;
-        font-size: 1.0em;
-        right: 36px;
-        z-index: 99999;
-        background: #fff;
-      }
-      .page_toc a:before {
-        content: "- ";
-      }
-      .nav {
-        margin: 0 auto;
-        width: 800px;
-      }
-      .page_toc p.title {
-        font-weight: 300;
-        font-size: 1.8em;
-      }
-      .content {
-        display: block;
-      }
-      .markdown-section {
-        margin: 0 auto;
-      }
-    }
-
-    .page_toc .active {
-      border-left: 5px solid;
-      color: var(--theme-color, #42b983);
-      padding-left: 10px;
     }
   </style>
   <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
@@ -146,7 +50,6 @@
       autoHeader: true,
       onlyCover: false,
       routerMode: 'hash',
-      //crossOriginLinks: ['https://mg.meiflower.top/skill/front/all.md'],
       subMaxLevel: 5,
       //basePath: 'http://mg.meiflower.top/',
       sidebarDisplayLevel: 5, // set sidebar display level
@@ -422,6 +325,7 @@
   <!-- Latest -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-flexible-alerts"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
+  <!-- docsify-accordion -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-accordion/src/style.css">
   <script src="//cdn.jsdelivr.net/npm/docsify-accordion/src/index.js"></script>
   <!-- docsify-tabs (latest v1.x.x) -->
@@ -458,6 +362,7 @@
   
   <!-- remote-markdown -->
   <script src="//cdn.jsdelivr.net/npm/docsify-remote-markdown/dist/docsify-remote-markdown.min.js"></script>
+
 
   <script>
     (function() {
