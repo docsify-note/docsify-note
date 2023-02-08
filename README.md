@@ -194,6 +194,7 @@ Alice <-- Bob: Another authentication Response22
 
 
 ## html预览示例
+依赖插件：[docsify-demo](https://www.npmjs.com/package/docsify-demo)
 ```html preview
 <p>Hello, World.</p>
 ```
