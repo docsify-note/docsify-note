@@ -90,3 +90,6 @@ Alice <-- Bob: Another authentication Response22
 --- 反射
 @endmindmap
 ```
+
+## B站视频示例
+<iframe style="width:100%;min-height:550px;" src="//player.bilibili.com/player.html?aid=308890282&bvid=BV1RA411z79H&cid=994986594&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
