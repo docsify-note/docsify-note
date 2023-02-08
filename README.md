@@ -6,7 +6,8 @@
 * [docsify资源清单](https://docsify.js.org/#/zh-cn/awesome)
 * [B站视频合集](https://space.bilibili.com/1174515315/channel/collectiondetail?sid=1017117&ctype=0)
 
-<iframe style="min-width:800px;min-height:550px;" src="//player.bilibili.com/player.html?aid=480251272&bvid=BV1UT411272V&cid=964518458&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<iframe style="width:800px;min-height:550px;" src="//player.bilibili.com/player.html?aid=480251272&bvid=BV1UT411272V&cid=964518458&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 
 ## 已贡献插件

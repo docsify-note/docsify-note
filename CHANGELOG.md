@@ -10,4 +10,5 @@
 8. 调整navbar内容里的快速跳转链接。
 9. demo页增加faq示例。
 10. 集成docsify-drawio插件，并在demo页维护其示例。
+11. 集成docsify-pangu插件，自动在中文和英文间隔空格。
 

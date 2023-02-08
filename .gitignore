@@ -1,2 +1,3 @@
 docs/.nojekyll
 .history/
+node_modules
