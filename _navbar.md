@@ -1,4 +1,4 @@
-
+* [更新日志](CHANGELOG.md)
 * 快速跳转
   * [GitHub](https://github.com/mg0324/)
   * [Gitee](https://gitee.com/mgang)
