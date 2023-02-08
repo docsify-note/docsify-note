@@ -360,7 +360,7 @@
             // ...
             // 异步处理完成后调用 next(html) 返回结果
             console.info("afterEach!")
-            var busuanzi = '<div style="text-align:center;">已有<span class="busuanzi-value" id="busuanzi_value_site_uv"></span>人访问 <span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span></div>';
+            var busuanzi = '<div style="text-align:center;">本文阅读量<span id="busuanzi_value_page_pv"></span> 已有<span class="busuanzi-value" id="busuanzi_value_site_uv"></span>人访问 <span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span></div>';
             html = html + busuanzi;
             renderBusuanzi();
             next(html);
