@@ -81,9 +81,30 @@ Bonjour!
 > [!ATTENTION]
 > An alert of type 'attention' using global style 'callout'.
 
+## kroki mermaid示例
+依赖插件：[docsify-kroki](https://www.npmjs.com/package/docsify-kroki)
+``` md 
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
 
-## plantuml示例
-依赖插件：[docsify-plantuml](https://www.npmjs.com/package/docsify-plantuml)
+效果如下：
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
+## kroki plantuml示例
+~~依赖插件：[docsify-plantuml](https://www.npmjs.com/package/docsify-plantuml)~~
+
+依赖插件：[docsify-kroki](https://www.npmjs.com/package/docsify-kroki)
 ### 顺序图
 ``` md
 @startuml

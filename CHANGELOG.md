@@ -11,4 +11,5 @@
 9. demo页增加faq示例。
 10. 集成docsify-drawio插件，并在demo页维护其示例。
 11. 集成docsify-pangu插件，自动在中文和英文间隔空格。
+12. 集成docsify-kroki插件，支持全热门图形化语言，如plantuml、mermaid等。
 
