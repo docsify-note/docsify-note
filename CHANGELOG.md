@@ -7,4 +7,5 @@
 5. 集成remoteMarkdownUrl插件，注意需要引用的是来自github上的md文档。（开放跨域了）
 6. 完善demo示例页。
 7. 将原主页里的demo内容移动到demo.md中，并完成主页。
+8. 调整navbar内容里的快速跳转链接。
 
