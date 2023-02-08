@@ -135,9 +135,7 @@
 <body>
   <div id="app">
     
-  </div>
-  
-  
+  </div>  
   <script>
     window.$docsify = {
       name: 'docsify-note',
@@ -303,11 +301,18 @@
         logo: 'top',				// logo:字符串或svg矢量图代码，默认为svg代码图标。
         bgColor: '#42b983'    	// 背景颜色，#fff、pink等，logo为svg图标时，不填。
       },
+      // docsify-plugin-toc
       toc: {
         tocMaxLevel: 5,
-        target: 'h2, h3, h4, h5, h6',
+        target: 'h1, h2, h3, h4, h5',
         ignoreHeaders:  ['<!-- {docsify-ignore} -->', '<!-- {docsify-ignore-all} -->']
       },
+      // docsify-toc
+      // toc: {
+      //   scope: '.markdown-section',
+      //   headings: 'h1, h2, h3, h4, h5, h6',
+      //   title: '目录',
+      // },
       // 百度统计ID
       baiduTjId: "e91bd7214bcbfc0ddd4c8f9e60453d7f",
       // giscus评论
@@ -326,60 +331,61 @@
         loading: "lazy"
       },
       // gitalk评论
-      gitalk: {
-        clientID: 'a80e57a9ad7a92dd2c8d',
-        clientSecret: 'c38424e2af55c1549f52de1564eb71b4a94c10ea',
-        repo: 'docsify-note-02',
-        owner: 'mg0324',
-        admin: ['mg0324']
-      }
-      // plugins: [
-      //   function(hook, vm) {
-      //     hook.init(function() {
-      //       // 初始化完成后调用，只调用一次，没有参数。
-      //       console.info("init!")
+      // gitalk: {
+      //   clientID: 'a80e57a9ad7a92dd2c8d',
+      //   clientSecret: 'c38424e2af55c1549f52de1564eb71b4a94c10ea',
+      //   repo: 'docsify-note-02',
+      //   owner: 'mg0324',
+      //   admin: ['mg0324']
+      // },
+      plugins: [
+        function(hook, vm) {
+          hook.init(function() {
+            // 初始化完成后调用，只调用一次，没有参数。
+            console.info("init!")
             
-      //     });
+          });
 
-      //     hook.beforeEach(function(content) {
-      //       // 每次开始解析 Markdown 内容时调用
-      //       // ...
-      //       console.info("beforeEach!")
+          hook.beforeEach(function(content) {
+            // 每次开始解析 Markdown 内容时调用
+            // ...
+            console.info("beforeEach!")
             
-      //       return content;
-      //     });
+            return content;
+          });
 
-      //     hook.afterEach(function(html, next) {
-      //       // 解析成 html 后调用。
-      //       // beforeEach 和 afterEach 支持处理异步逻辑
-      //       // ...
-      //       // 异步处理完成后调用 next(html) 返回结果
-      //       console.info("afterEach!")
-      //       html = html + '<div id="gitalk-container"></div>';
-      //       renderGitalk();
-      //       next(html);
-      //     });
+          hook.afterEach(function(html, next) {
+            // 解析成 html 后调用。
+            // beforeEach 和 afterEach 支持处理异步逻辑
+            // ...
+            // 异步处理完成后调用 next(html) 返回结果
+            console.info("afterEach!")
+            var busuanzi = '<div style="text-align:center;">已有<span class="busuanzi-value" id="busuanzi_value_site_uv"></span>人访问 <span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span></div>';
+            html = html + busuanzi;
+            renderBusuanzi();
+            next(html);
+          });
 
-      //     hook.doneEach(function() {
-      //       // 每次路由切换时数据全部加载完成后调用，没有参数。
-      //       // ...
-      //       console.info("doneEach!")
-      //     });
+          hook.doneEach(function() {
+            // 每次路由切换时数据全部加载完成后调用，没有参数。
+            // ...
+            console.info("doneEach!")
+          });
 
-      //     hook.mounted(function() {
-      //       // 初始化并第一次加载完成数据后调用，只触发一次，没有参数。
-      //       console.info("mounted!")
+          hook.mounted(function() {
+            // 初始化并第一次加载完成数据后调用，只触发一次，没有参数。
+            console.info("mounted!")
             
-      //     });
+          });
 
-      //     hook.ready(function() {
-      //       // 初始化并第一次加载完成数据后调用，没有参数。
-      //       console.info("ready!")
+          hook.ready(function() {
+            // 初始化并第一次加载完成数据后调用，没有参数。
+            console.info("ready!")
 
             
-      //     });
-      //   }
-      // ]
+          });
+        }
+      ]
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script>
@@ -415,7 +421,7 @@
 
   <script src="//unpkg.com/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
 
-  <!-- toc -->
+  <!-- docsify-toc -->
   <!-- <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css"> -->
   <!-- <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script> -->
 
@@ -431,10 +437,10 @@
   <script src="https://unpkg.com/docsify-giscus@1.0.2/dist/docsify-giscus.min.js"></script>
 
   <!-- GitTalk评论 -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
-  <script src="https://unpkg.com/docsify-gitalk@0.0.1/dist/docsify-gitalk.min.js"></script>
+  <script src="https://unpkg.com/docsify-gitalk@0.0.1/dist/docsify-gitalk.min.js"></script> -->
 
   <!-- <script src="https://giscus.app/client.js"
         data-repo="mg0324/docsify-note-01"
@@ -455,6 +461,13 @@
     (function() {
 
     })();
+    function renderBusuanzi(){
+      var sc = document.createElement("script");
+      sc.src = "//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js";
+      sc.async = "async";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(sc, s);
+    }
     // function renderGitalk(){
     //   var gitalk = new Gitalk({
     //     clientID: 'a80e57a9ad7a92dd2c8d',
