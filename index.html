@@ -240,6 +240,22 @@
         lang: "zh-CN",
         loading: "lazy"
       },
+      markdown: {
+        renderer: {
+          code: function (code, lang) {
+            if (lang === 'drawio') {
+              if (window.drawioConverter) {
+                console.log('drawio 转化中')
+                return window.drawioConverter(code)
+              } else {
+                return `<div class='drawio-code'>${code}</div>`
+              }
+            } else {
+              return this.origin.code.apply(this, arguments);
+            }
+          }
+        }
+      },
       // gitalk评论
       // gitalk: {
       //   clientID: 'a80e57a9ad7a92dd2c8d',
@@ -362,6 +378,10 @@
   
   <!-- remote-markdown -->
   <script src="//cdn.jsdelivr.net/npm/docsify-remote-markdown/dist/docsify-remote-markdown.min.js"></script>
+  
+  <!-- docsify-drawio -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-drawio/viewer.min.js"></script>
+  <script src='https://cdn.jsdelivr.net/npm/docsify-drawio/drawio.js'></script>
 
 
   <script>

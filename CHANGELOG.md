@@ -9,4 +9,5 @@
 7. 将原主页里的demo内容移动到demo.md中，并完成主页。
 8. 调整navbar内容里的快速跳转链接。
 9. demo页增加faq示例。
+10. 集成docsify-drawio插件，并在demo页维护其示例。
 

@@ -219,8 +219,17 @@ Alice <-- Bob: Another authentication Response22
 <p>Hello, Docsify!</p>
 ```
 
-## 引入github上的md文档
-依赖插件：[docsify-remote-markdown](https://www.npmjs.com/package/docsify-remote-markdown)，其中`rmd2`为配置的`tag`。
+## 引入远程md文档示例
+依赖插件：[docsify-remote-markdown](https://www.npmjs.com/package/docsify-remote-markdown)，其中`rmd2`为配置的`tag`，且需要引入github来源的，其他的可能会报跨域错误。
 ``` text
 [rmd2](https://raw.githubusercontent.com/mg0324/my-project/master/home-docsify/skill/front/all.md)
 ```
+
+## drawio示例
+依赖插件：[docsify-drawio](https://github.com/KonghaYao/docsify-drawio)
+``` md
+[filename](https://cdn.jsdelivr.net/npm/docsify-drawio/test.drawio ':include :type=code')
+```
+效果如下：
+
+[filename](https://cdn.jsdelivr.net/npm/docsify-drawio/test.drawio ':include :type=code')
