@@ -136,10 +136,9 @@
   <div id="app">
     
   </div>
-  <nav></nav>
   <script>
     window.$docsify = {
-      name: 'docsify-note',
+      name: 'docsify-note在线笔记',
       repo: 'https://gitee.com/mgang/docsify-note.git',
       coverpage: false,
       loadNavbar: true,
@@ -147,6 +146,7 @@
       autoHeader: true,
       onlyCover: false,
       routerMode: 'hash',
+      crossOriginLinks: ['https://mg.meiflower.top/skill/front/all.md'],
       subMaxLevel: 5,
       //basePath: 'http://mg.meiflower.top/',
       sidebarDisplayLevel: 5, // set sidebar display level
@@ -318,6 +318,10 @@
       baiduTjId: "e91bd7214bcbfc0ddd4c8f9e60453d7f",
       // 开启busuanzi
       busuanzi: true,
+      // 开启远程md
+      remoteMarkdown: {
+        tag: 'rmd',
+      },
       // giscus评论
       giscus:{
         repo: "mg0324/docsify-note-01",
@@ -422,8 +426,9 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-accordion/src/index.js"></script>
   <!-- docsify-tabs (latest v1.x.x) -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+  <!-- docsify-backTop -->
   <script src="https://cdn.jsdelivr.net/gh/Sumsung524/docsify-backTop/dist/docsify-backTop.min.js"></script>
-
+  <!-- docsify-plantuml -->
   <script src="//cdn.jsdelivr.net/npm/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
 
   <!-- docsify-toc -->
@@ -437,8 +442,6 @@
   <!-- 百度统计 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-baidu-tj@1.0.2/dist/docsify-baidu-tj.min.js"></script>
 
-  
-
   <!-- giscus评论  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-giscus@1.0.2/dist/giscus.css">
   <script src="https://cdn.jsdelivr.net/npm/docsify-giscus@1.0.2/dist/docsify-giscus.min.js"></script>
@@ -448,6 +451,13 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-gitalk@0.0.1/dist/docsify-gitalk.min.js"></script> -->
+
+  <!-- html preview demo-->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-demo@latest/dist/index.min.css"/>
+  <script src="//cdn.jsdelivr.net/npm/docsify-demo@latest/dist/index.min.js"></script>
+  
+  <!-- remote-markdown -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-remote-markdown/dist/docsify-remote-markdown.min.js"></script>
 
   <script>
     (function() {
