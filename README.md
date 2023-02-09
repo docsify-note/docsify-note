@@ -2,7 +2,8 @@
 [docsify-note在线笔记](https://gitee.com/mgang/docsify-note)将个人使用docsify的经验整理并提炼，最后分享给大家，帮助大家构建自己的在线笔记，或者文档！
 
 ## 相关资源
-* [docsify官方文档](https://docsify.js.org/#/zh-cn/)
+* [docsify官方文档](https://docsify.js.org/#/zh-cn/) - 需要访问国外服务器，可能会404
+* [docsify临时文档](https://mg0324.github.io/docs-zh/#/) - 如果访问不到官方文档的话，可以使用如下临时文档地址。
 * [docsify资源清单](https://docsify.js.org/#/zh-cn/awesome)
 * [B站视频合集](https://space.bilibili.com/1174515315/channel/collectiondetail?sid=1017117&ctype=0)
 
