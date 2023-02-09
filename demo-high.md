@@ -1,5 +1,5 @@
 
-## 引入远程md文档示例
+## 嵌入远程md示例
 
 依赖插件：[docsify-remote-markdown](https://www.npmjs.com/package/docsify-remote-markdown)，其中`rmd2`为配置的`tag`，且需要引入github来源的，其他的可能会报跨域错误。
 
@@ -17,6 +17,11 @@
 效果如下：
 
 [filename](https://cdn.jsdelivr.net/npm/docsify-drawio/test.drawio ':include :type=code')
+
+## 嵌入drawio png示例
+将draw的图片引入到md
+
+![](demo.drawio.png)
 
 
 ## 嵌入iframe示例
