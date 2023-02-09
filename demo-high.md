@@ -19,8 +19,10 @@
 [filename](https://cdn.jsdelivr.net/npm/docsify-drawio/test.drawio ':include :type=code')
 
 ## 嵌入drawio png示例
-将draw的图片引入到md
-
+将draw的图片引入到md，其中`demo.drawio.png`是`vs code`借助drawio的插件支持的可编辑图片。
+```
+![](demo.drawio.png)
+```
 ![](demo.drawio.png)
 
 
