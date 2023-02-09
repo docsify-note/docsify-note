@@ -222,20 +222,20 @@
         tag: 'rmd',
       },
       // giscus评论
-      giscus:{
-        repo: "mg0324/docsify-note-01",
-        repoId: "R_kgDOI4bELQ",
-        category: "Announcements",
-        categoryId: "DIC_kwDOI4bELc4CT_Su",
-        mapping: "url",
-        reactionsEnabled: "0",
-        strict: "1",
-        emitMetadata: "0",
-        inputPosition: "bottom",
-        theme: "light",
-        lang: "zh-CN",
-        loading: "lazy"
-      },
+      // giscus:{
+      //   repo: "mg0324/docsify-note-01",
+      //   repoId: "R_kgDOI4bELQ",
+      //   category: "Announcements",
+      //   categoryId: "DIC_kwDOI4bELc4CT_Su",
+      //   mapping: "url",
+      //   reactionsEnabled: "0",
+      //   strict: "1",
+      //   emitMetadata: "0",
+      //   inputPosition: "bottom",
+      //   theme: "light",
+      //   lang: "zh-CN",
+      //   loading: "lazy"
+      // },
       markdown: {
         renderer: {
           code: function (code, lang) {
@@ -252,14 +252,14 @@
           }
         }
       },
-      // gitalk评论
-      // gitalk: {
-      //   clientID: 'a80e57a9ad7a92dd2c8d',
-      //   clientSecret: 'c38424e2af55c1549f52de1564eb71b4a94c10ea',
-      //   repo: 'docsify-note-02',
-      //   owner: 'mg0324',
-      //   admin: ['mg0324']
-      // },
+      //gitalk评论
+      gitalk: {
+        clientID: 'a80e57a9ad7a92dd2c8d',
+        clientSecret: 'c38424e2af55c1549f52de1564eb71b4a94c10ea',
+        repo: 'docsify-note-02',
+        owner: 'mg0324',
+        admin: ['mg0324']
+      },
       // plugins: [
       //   function(hook, vm) {
       //     hook.init(function() {
@@ -359,14 +359,14 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify-baidu-tj@1.0.2/dist/docsify-baidu-tj.min.js"></script>
 
   <!-- giscus评论  -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-giscus@1.0.2/dist/giscus.css">
-  <script src="https://cdn.jsdelivr.net/npm/docsify-giscus@1.0.2/dist/docsify-giscus.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-giscus@1.0.2/dist/giscus.css">
+  <script src="https://cdn.jsdelivr.net/npm/docsify-giscus@1.0.2/dist/docsify-giscus.min.js"></script> -->
 
   <!-- GitTalk评论 -->
-  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify-gitalk@0.0.1/dist/docsify-gitalk.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-gitalk@1.0.0/dist/docsify-gitalk.min.js"></script>
 
   <!-- html preview demo-->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-demo@latest/dist/index.min.css"/>
