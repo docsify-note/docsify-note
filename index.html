@@ -22,8 +22,16 @@
       bottom: 15px !important;
     }
     .markdown-section {
-      flex: 1 1 0%;
-      margin: 0 48px;
+      max-width: 90% !important;
+    }
+    aside.toc-nav {
+      margin-right: 10px !important; 
+      width: 200px !important;
+    }
+    @media only screen and (min-width: 1300px){
+      section.content {
+          padding-right: 200px !important;
+      }
     }
   </style>
   <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
@@ -204,7 +212,7 @@
       // docsify-plugin-toc
       toc: {
         tocMaxLevel: 5,
-        target: 'h1, h2, h3, h4, h5',
+        target: 'h2, h3, h4, h5, h6',
         ignoreHeaders:  ['<!-- {docsify-ignore} -->', '<!-- {docsify-ignore-all} -->']
       },
       // docsify-toc
