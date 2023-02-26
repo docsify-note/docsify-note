@@ -17,4 +17,5 @@
 * [docsify-giscus](https://github.com/mg0324/docsify-giscus) - giscus评论插件
 * [docsify-gitalk](https://github.com/mg0324/docsify-gitalk) - gitalk评论增强插件
 * [docsify-busuanzi](https://github.com/mg0324/docsify-busuanzi) - busuanzi插件，显示网站访问量
+* [docsify-ads](https://github.com/mg0324/docsify-ads) - 广告插件，显示自定义推广广告
 
