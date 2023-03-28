@@ -14,6 +14,10 @@
     <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
     <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
+  <link rel="apple-touch-icon" sizes="180x180" href="static/icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/icon/favicon-16x16.png">
+  <link rel="manifest" href="static/icon/site.webmanifest">
 </head>
 <body>
   <div id="app"></div>
@@ -189,7 +193,7 @@
       busuanzi: true,
       // docsify ads 配置广告
       ads: [
-      {
+        {
           img: 'https://dn-lego-static.qbox.me/cps/1638355965-480x300.jpg',
           href: 'https://s.qiniu.com/zqiMBz'
         },
@@ -287,48 +291,48 @@
       //   admin: ['mg0324']
       // },
       // plugins: [
-      //   function(hook, vm) {
-      //     hook.init(function() {
-      //       // 初始化完成后调用，只调用一次，没有参数。
-      //       console.info("init!")
+        // function(hook, vm) {
+        //   hook.init(function() {
+        //     // 初始化完成后调用，只调用一次，没有参数。
+        //     console.info("init!")
             
-      //     });
+        //   });
 
-      //     hook.beforeEach(function(content) {
-      //       // 每次开始解析 Markdown 内容时调用
-      //       // ...
-      //       console.info("beforeEach!")
+        //   hook.beforeEach(function(content) {
+        //     // 每次开始解析 Markdown 内容时调用
+        //     // ...
+        //     console.info("beforeEach!")
             
-      //       return content;
-      //     });
+        //     return content;
+        //   });
 
-      //     hook.afterEach(function(html, next) {
-      //       // 解析成 html 后调用。
-      //       // beforeEach 和 afterEach 支持处理异步逻辑
-      //       // ...
-      //       // 异步处理完成后调用 next(html) 返回结果
-      //       console.info("afterEach!")
-      //       console.info(html)
-      //       next(html);
-      //     });
+        //   hook.afterEach(function(html, next) {
+        //     // 解析成 html 后调用。
+        //     // beforeEach 和 afterEach 支持处理异步逻辑
+        //     // ...
+        //     // 异步处理完成后调用 next(html) 返回结果
+        //     console.info("afterEach!")
+        //     console.info(html)
+        //     next(html);
+        //   });
 
-      //     hook.doneEach(function() {
-      //       // 每次路由切换时数据全部加载完成后调用，没有参数。
-      //       // ...
-      //       console.info("doneEach!")
-      //     });
+        //   hook.doneEach(function() {
+        //     // 每次路由切换时数据全部加载完成后调用，没有参数。
+        //     // ...
+        //     console.info("doneEach!")
+        //   });
 
-      //     hook.mounted(function() {
-      //       // 初始化并第一次加载完成数据后调用，只触发一次，没有参数。
-      //       console.info("mounted!")
+        //   hook.mounted(function() {
+        //     // 初始化并第一次加载完成数据后调用，只触发一次，没有参数。
+        //     console.info("mounted!")
             
-      //     });
+        //   });
 
-      //     hook.ready(function() {
-      //       // 初始化并第一次加载完成数据后调用，没有参数。
-      //       console.info("ready!")
-      //     });
-      //   }
+        //   hook.ready(function() {
+        //     // 初始化并第一次加载完成数据后调用，没有参数。
+        //     console.info("ready!")
+        //   });
+        // }
       // ]
     }
   </script>
@@ -393,6 +397,6 @@
   <!-- java语法高亮 -->
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-java.min.js"></script>
   <!-- docsify ads -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-ads@1.0.1/dist/docsify-ads.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-ads@1.0.4/dist/docsify-ads.min.js"></script>
 </body>
 </html>
