@@ -1,6 +1,10 @@
 ## 简介
 [docsify-note在线笔记](https://gitee.com/mgang/docsify-note)将个人使用docsify的经验整理并提炼，最后分享给大家，帮助大家构建自己的在线笔记，或者文档！
 
+## 微信交流群
+欢迎加入微信交流群，请加我微信并备注[docsify-note交流]，我会拉您进群！
+
+<img style="width:250px;" src="https://mg.meiflower.top/oss/docsify-note/mango-wx.jpeg">
 
 ## 相关资源
 * [docsify官方文档](https://docsify.js.org/#/zh-cn/) - 需要访问国外服务器，可能会404
