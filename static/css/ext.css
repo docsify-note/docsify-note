@@ -44,3 +44,13 @@ aside.toc-nav {
 img.emoji{
     height:32px;
 }
+
+@media only screen and (max-width: 768px) {
+    .sidebar-pin{
+        z-index: -1;
+    }
+}
+.sidebar-toggle {
+    left: 8px !important;
+    bottom: 12px !important;
+}
