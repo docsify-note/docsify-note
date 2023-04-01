@@ -21,9 +21,10 @@
 </head>
 <body>
   <div id="app"></div>
+  
   <script>
     window.$docsify = {
-      name: 'docsify-note在线笔记<span class="mg-badge">1.0.0</span>',
+      name: 'docsify-note在线笔记<span class="mg-badge">1.0.1</span>',
       repo: 'https://gitee.com/mgang/docsify-note.git',
       coverpage: false,
       loadNavbar: true,
@@ -252,20 +253,20 @@
         tag: 'rmd',
       },
       // giscus评论
-      giscus:{
-        repo: "mg0324/docsify-comments",
-        repoId: "R_kgDOI68LwA",
-        category: "Announcements",
-        categoryId: "DIC_kwDOI68LwM4CUDhM",
-        mapping: "url",
-        reactionsEnabled: "0",
-        strict: "1",
-        emitMetadata: "0",
-        inputPosition: "bottom",
-        theme: "light",
-        lang: "zh-CN",
-        loading: "lazy"
-      },
+      // giscus:{
+      //   repo: "mg0324/docsify-comments",
+      //   repoId: "R_kgDOI68LwA",
+      //   category: "Announcements",
+      //   categoryId: "DIC_kwDOI68LwM4CUDhM",
+      //   mapping: "url",
+      //   reactionsEnabled: "true",
+      //   strict: "1",
+      //   emitMetadata: "0",
+      //   inputPosition: "bottom",
+      //   theme: "light",
+      //   lang: "zh-CN",
+      //   loading: "lazy"
+      // },
       markdown: {
         renderer: {
           code: function (code, lang) {
@@ -290,51 +291,58 @@
       //   owner: 'mg0324',
       //   admin: ['mg0324']
       // },
-      // plugins: [
-        // function(hook, vm) {
-        //   hook.init(function() {
-        //     // 初始化完成后调用，只调用一次，没有参数。
-        //     console.info("init!")
+      plugins: [
+        function(hook, vm) {
+          hook.init(function() {
+            // 初始化完成后调用，只调用一次，没有参数。
+            console.info("init!")
             
-        //   });
+          });
 
-        //   hook.beforeEach(function(content) {
-        //     // 每次开始解析 Markdown 内容时调用
-        //     // ...
-        //     console.info("beforeEach!")
+          hook.beforeEach(function(content) {
+            // 每次开始解析 Markdown 内容时调用
+            // ...
+            console.info("beforeEach!")
             
-        //     return content;
-        //   });
+            return content;
+          });
 
-        //   hook.afterEach(function(html, next) {
-        //     // 解析成 html 后调用。
-        //     // beforeEach 和 afterEach 支持处理异步逻辑
-        //     // ...
-        //     // 异步处理完成后调用 next(html) 返回结果
-        //     console.info("afterEach!")
-        //     console.info(html)
-        //     next(html);
-        //   });
+          hook.afterEach(function(html, next) {
+            // 解析成 html 后调用。
+            // beforeEach 和 afterEach 支持处理异步逻辑
+            // ...
+            // 异步处理完成后调用 next(html) 返回结果
+            console.info("afterEach!")
+            console.info(html)
+            html += `<div id="vcomments"></div>`;
+            next(html);
+          });
 
-        //   hook.doneEach(function() {
-        //     // 每次路由切换时数据全部加载完成后调用，没有参数。
-        //     // ...
-        //     console.info("doneEach!")
-        //   });
+          hook.doneEach(function() {
+            // 每次路由切换时数据全部加载完成后调用，没有参数。
+            // ...
+            console.info("doneEach!")
+            new Valine({
+                el: '#vcomments',
+                appId: 'OclxQh48RGqlZ7OAmqfCXjqu-gzGzoHsz',
+                appKey: 'BZdD1MxORUSdktnY8A7eRjv2'
+            })
+          });
 
-        //   hook.mounted(function() {
-        //     // 初始化并第一次加载完成数据后调用，只触发一次，没有参数。
-        //     console.info("mounted!")
+          hook.mounted(function() {
+            // 初始化并第一次加载完成数据后调用，只触发一次，没有参数。
+            console.info("mounted!")
             
-        //   });
+          });
 
-        //   hook.ready(function() {
-        //     // 初始化并第一次加载完成数据后调用，没有参数。
-        //     console.info("ready!")
-        //   });
-        // }
-      // ]
+          hook.ready(function() {
+            // 初始化并第一次加载完成数据后调用，没有参数。
+            console.info("ready!")
+          });
+        }
+      ]
     }
+    
   </script>
   <script src="//cdn.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script>
   <!-- Docsify v4 -->
@@ -375,8 +383,8 @@
   <!-- 百度统计 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-baidu-tj@1.0.2/dist/docsify-baidu-tj.min.js"></script>
   <!-- giscus评论  -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-giscus@1.0.2/dist/giscus.css">
-  <script src="https://cdn.jsdelivr.net/npm/docsify-giscus@1.0.2/dist/docsify-giscus.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-giscus@1.0.2/dist/giscus.css">
+  <script src="https://cdn.jsdelivr.net/npm/docsify-giscus@1.0.2/dist/docsify-giscus.min.js"></script> -->
   <!-- GitTalk评论 -->
   <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
@@ -398,5 +406,7 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-java.min.js"></script>
   <!-- docsify ads -->
   <script src="//cdn.jsdelivr.net/npm/docsify-ads@1.0.4/dist/docsify-ads.min.js"></script>
+  <!-- valine -->
+  <script src='//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
 </body>
 </html>
