@@ -4,6 +4,7 @@
 2. 发布[docsify-mango-valine](https://www.npmjs.com/package/docsify-mango-valine)插件到公共仓库
 3. 修改热门前端路径到my-res中。
 4. 增加[docsify-template](https://mg0324.github.io/docsify-template/#/)的链接。
+5. 整理首页的相关资源列表。
 
 ## 2023-03-31
 1. 修复小屏时，目录图标点击不方便的问题。（将`sidebar-pin`移动至`-1`层防止盖住）

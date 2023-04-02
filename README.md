@@ -13,7 +13,12 @@
 ## 相关资源
 * [docsify官方文档](https://docsify.js.org/#/zh-cn/) - 需要访问国外服务器，可能会404
 * [docsify临时文档](https://mg0324.github.io/docs-zh/#/) - 如果访问不到官方文档的话，可以使用如下临时文档地址。
-* [docsify资源清单](https://docsify.js.org/#/zh-cn/awesome)
+* [docsify资源清单](https://docsify.js.org/#/zh-cn/awesome) - docsify的官方资源清单，可以找到插件生态。
+* [docsify-note](https://mg0324.github.io/docsify-note/) - 在线笔记
+* [dodcify-template](https://mg0324.github.io/docsify-template/) - 整理的docsify的模板仓库
+* [mangodoc](https://mg0324.github.io/mangodoc/#/) - 自己开发的类docsify的文档构建器。
+* [s-cpu](https://mgang.gitee.io/s-cpu/#/) - 学习计算机组成原理CPU的在线笔记
+* [s-java](https://mg0324.github.io/s-java/#/) - Java体系学习笔记整理
 * [B站视频合集](https://space.bilibili.com/1174515315/channel/collectiondetail?sid=1017117&ctype=0)
 
 
