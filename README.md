@@ -2,7 +2,7 @@
 [docsify-note在线笔记](https://gitee.com/mgang/docsify-note)将个人使用docsify的经验整理并提炼，最后分享给大家，帮助大家构建自己的在线笔记，或者文档！
 
 ## 微信交流群
-欢迎加入微信交流群，请加我微信并备注[docsify-note交流]，我会拉您进群！
+欢迎加入微信交流群，请加我微信并备注[`docsify-note交流`]，我会拉您进群！
 
 <img style="width:250px;" src="https://mg.meiflower.top/oss/docsify-note/mango-wx.jpeg">
 
@@ -22,4 +22,5 @@
 * [docsify-gitalk](https://github.com/mg0324/docsify-gitalk) - gitalk评论增强插件
 * [docsify-busuanzi](https://github.com/mg0324/docsify-busuanzi) - busuanzi插件，显示网站访问量
 * [docsify-ads](https://github.com/mg0324/docsify-ads) - 广告插件，显示自定义推广广告
+* [docsify-mango-valine](https://www.npmjs.com/package/docsify-mango-valine) - valine评论插件，支持匿名评论，默认path按title定位
 

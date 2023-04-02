@@ -24,7 +24,7 @@
   
   <script>
     window.$docsify = {
-      name: 'docsify-note在线笔记<span class="mg-badge">1.0.1</span>',
+      name: 'docsify-note在线笔记<span class="mg-badge">1.0.2</span>',
       repo: 'https://gitee.com/mgang/docsify-note.git',
       coverpage: false,
       loadNavbar: true,
@@ -267,6 +267,11 @@
       //   lang: "zh-CN",
       //   loading: "lazy"
       // },
+      // valine评论
+      valine:{
+          appId: 'OclxQh48RGqlZ7OAmqfCXjqu-gzGzoHsz',
+          appKey: 'BZdD1MxORUSdktnY8A7eRjv2',
+      },
       markdown: {
         renderer: {
           code: function (code, lang) {
@@ -291,56 +296,57 @@
       //   owner: 'mg0324',
       //   admin: ['mg0324']
       // },
-      plugins: [
-        function(hook, vm) {
-          hook.init(function() {
-            // 初始化完成后调用，只调用一次，没有参数。
-            console.info("init!")
+      // plugins: [
+      //   function(hook, vm) {
+      //     hook.init(function() {
+      //       // 初始化完成后调用，只调用一次，没有参数。
+      //       console.info("init!")
             
-          });
+      //     });
 
-          hook.beforeEach(function(content) {
-            // 每次开始解析 Markdown 内容时调用
-            // ...
-            console.info("beforeEach!")
+      //     hook.beforeEach(function(content) {
+      //       // 每次开始解析 Markdown 内容时调用
+      //       // ...
+      //       console.info("beforeEach!")
             
-            return content;
-          });
+      //       return content;
+      //     });
 
-          hook.afterEach(function(html, next) {
-            // 解析成 html 后调用。
-            // beforeEach 和 afterEach 支持处理异步逻辑
-            // ...
-            // 异步处理完成后调用 next(html) 返回结果
-            console.info("afterEach!")
-            console.info(html)
-            html += `<div id="vcomments"></div>`;
-            next(html);
-          });
+      //     hook.afterEach(function(html, next) {
+      //       // 解析成 html 后调用。
+      //       // beforeEach 和 afterEach 支持处理异步逻辑
+      //       // ...
+      //       // 异步处理完成后调用 next(html) 返回结果
+      //       console.info("afterEach!")
+      //       console.info(html)
+      //       html += `<div id="vcomments"></div>`;
+      //       next(html);
+      //     });
 
-          hook.doneEach(function() {
-            // 每次路由切换时数据全部加载完成后调用，没有参数。
-            // ...
-            console.info("doneEach!")
-            new Valine({
-                el: '#vcomments',
-                appId: 'OclxQh48RGqlZ7OAmqfCXjqu-gzGzoHsz',
-                appKey: 'BZdD1MxORUSdktnY8A7eRjv2'
-            })
-          });
+      //     hook.doneEach(function() {
+      //       // 每次路由切换时数据全部加载完成后调用，没有参数。
+      //       // ...
+      //       console.info("doneEach!")
+      //       new Valine({
+      //           el: '#vcomments',
+      //           appId: 'OclxQh48RGqlZ7OAmqfCXjqu-gzGzoHsz',
+      //           appKey: 'BZdD1MxORUSdktnY8A7eRjv2',
+      //           path: window.document.title
+      //       })
+      //     });
 
-          hook.mounted(function() {
-            // 初始化并第一次加载完成数据后调用，只触发一次，没有参数。
-            console.info("mounted!")
+      //     hook.mounted(function() {
+      //       // 初始化并第一次加载完成数据后调用，只触发一次，没有参数。
+      //       console.info("mounted!")
             
-          });
+      //     });
 
-          hook.ready(function() {
-            // 初始化并第一次加载完成数据后调用，没有参数。
-            console.info("ready!")
-          });
-        }
-      ]
+      //     hook.ready(function() {
+      //       // 初始化并第一次加载完成数据后调用，没有参数。
+      //       console.info("ready!")
+      //     });
+      //   }
+      // ]
     }
     
   </script>
@@ -359,6 +365,9 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <!-- 侧边栏扩展与折叠 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <!-- valine -->
+  <script src='//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-mango-valine@1.1.1/dist/docsify-mango-valine.min.js"></script>
   <!-- busuanzi -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-busuanzi@1.0.1/dist/docsify-busuanzi.min.js"></script>
   <!-- 页脚信息 -->
@@ -406,7 +415,6 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-java.min.js"></script>
   <!-- docsify ads -->
   <script src="//cdn.jsdelivr.net/npm/docsify-ads@1.0.4/dist/docsify-ads.min.js"></script>
-  <!-- valine -->
-  <script src='//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+  
 </body>
 </html>
