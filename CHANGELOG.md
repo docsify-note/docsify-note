@@ -2,6 +2,8 @@
 ## 2023-04-02
 1. 修改评论插件为valine，支持匿名评论。
 2. 发布[docsify-mango-valine](https://www.npmjs.com/package/docsify-mango-valine)插件到公共仓库
+3. 修改热门前端路径到my-res中。
+
 ## 2023-03-31
 1. 修复小屏时，目录图标点击不方便的问题。（将`sidebar-pin`移动至`-1`层防止盖住）
 
