@@ -1,4 +1,8 @@
 # 更新日志
+
+## 2023-04-05
+1. 修复cdn被墙超时的问题，从cdn切换到gcore。
+
 ## 2023-04-02
 1. 修改评论插件为valine，支持匿名评论。
 2. 发布[docsify-mango-valine](https://www.npmjs.com/package/docsify-mango-valine)插件到公共仓库
