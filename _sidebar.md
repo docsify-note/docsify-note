@@ -5,6 +5,7 @@
   - [书签示例](bookmark/README.md)
   - [vue示例](demo-vue.md)
   - [emoji示例](demo-emoji.md)
+- [B站视频](blist.md)
 - [主流前端](hot-front.md)
 - [关于我](http://mg.meiflower.top)
 
