@@ -2,6 +2,9 @@
 ## 2023-04-12
 1. index.html更新docsify版本到4.13.0。
 2. 更新b站视频列表。
+3. 集成[docsify-contributors](https://www.npmjs.com/package/docsify-contributors)插件，显示仓库共享者。
+4. 安装[docsify-to-pdf](https://www.npmjs.com/package/docsify-to-pdf)，将docsify-note生成pdf文档。
+5. 集成[docsify-pdf-embed-plugin](https://www.npmjs.com/package/docsify-pdf-embed-plugin)插件，内嵌pdf文档。
 
 ## 2023-04-09
 1. 新增docsify的b站视频目录说明页。
