@@ -57,6 +57,7 @@
 
 ## docsify总结篇
 * [docsify总结回顾，更新完毕恭喜您终于有了自己的在线笔记](https://www.bilibili.com/video/BV1g8411T77s/)
+* [docsify总结，梳理B站视频分类，清晰化结构](https://www.bilibili.com/video/BV1vM411N7Lj/)
 
 ## docsify之mangodoc篇
 * [docsify之mangodoc篇的前情说明参考docsify和chatGPT](https://www.bilibili.com/video/BV1g8411c7VV/)
