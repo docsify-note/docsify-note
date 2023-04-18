@@ -1,4 +1,8 @@
 # 更新日志
+
+## 2023-04-xx
+1. 将cdn切换到`https://mg.meiflower.top/oss/cdn/`，因为`cdn`和`gcore`会出现被墙的可能。
+
 ## 2023-04-15
 1. 发布[1.1.0](https://github.com/mg0324/docsify-note/releases/tag/1.1.0)版本，整合小版本日志。
 2. index.html更新docsify版本到4.13.0。（2023-04-12）
