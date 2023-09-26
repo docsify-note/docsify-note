@@ -1,5 +1,8 @@
 # 更新日志
 
+## 2023-09-26
+1. 更新主页内容，基于`docsify-note-cli`完善快速构建。
+
 ## 2023-04-xx
 1. 将cdn切换到`https://mg.meiflower.top/oss/cdn/`，因为`cdn`和`gcore`会出现被墙的可能。
 
