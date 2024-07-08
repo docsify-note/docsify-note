@@ -175,13 +175,6 @@
         tabComments: true,      // default
         tabHeadings: true       // default
       },
-      docsifyBackTop: {
-        size: 32,           	// 数值，组件大小，默认值32。
-        bottom: 15,         	// 数值，组件底部偏移距离，默认值15。
-        right: 15,          	// 数值，组件右侧偏移距离，默认值15。
-        logo: 'top',				// logo:字符串或svg矢量图代码，默认为svg代码图标。
-        bgColor: '#42b983'    	// 背景颜色，#fff、pink等，logo为svg图标时，不填。
-      },
       // docsify-plugin-toc
       toc: {
         tocMaxLevel: 5,
@@ -336,6 +329,13 @@
             isOpen: true,
             color: "#009999"
         }
+      },
+      auth: {
+        enable: false, // 是否开启
+        use: "sha256",
+        password: "e10adc3949ba59abbe56e057f20f883e", // sha256密码
+        title: "请输入密码", // 设置标题
+        paths: ["^/bookmark"] // 需要认证的路径，支持正则表达式匹配
       }
       //gitalk评论
       // gitalk: {
@@ -469,5 +469,8 @@
   <!-- docsify pdf embed -->
   <script src="https://cdn.jsdelivr.net/npm/pdfobject@2.2.8/pdfobject.min.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/docsify-pdf-embed-plugin/src/docsify-pdf-embed.js"></script>
+  <!-- docsify auth -->
+  <script src="https://cdn.jsdelivr.net/npm/js-sha256@0.9.0/build/sha256.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-auth@1.2.0/dist/docsify-auth.min.js"></script>
 </body>
 </html>
