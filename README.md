@@ -46,12 +46,11 @@ docsify s
 
 <iframe style="width:800px;min-height:550px;" src="//player.bilibili.com/player.html?aid=480251272&bvid=BV1UT411272V&cid=964518458&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
-
-## 已贡献插件
+## 个人已贡献插件
 * [docsify-baidu-tj](https://github.com/mg0324/docsify-baidu-tj) - 百度统计插件
 * [docsify-giscus](https://github.com/mg0324/docsify-giscus) - giscus评论插件
 * [docsify-gitalk](https://github.com/mg0324/docsify-gitalk) - gitalk评论增强插件
 * [docsify-busuanzi](https://github.com/mg0324/docsify-busuanzi) - busuanzi插件，显示网站访问量
 * [docsify-ads](https://github.com/mg0324/docsify-ads) - 广告插件，显示自定义推广广告
 * [docsify-mango-valine](https://www.npmjs.com/package/docsify-mango-valine) - valine评论插件，支持匿名评论，默认path按title定位
-
+* [docsify-auth](https://github.com/mg0324/docsify-auth) - 支持认证功能，可配置页面是否开启认证

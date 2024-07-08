@@ -6,6 +6,7 @@
   - [vue示例](demo-vue.md)
   - [emoji示例](demo-emoji.md)
   - [pdf示例](demo-pdf.md)
+- [插件篇](plugin/index.md)
 - [B站视频](blist.md)
 - [主流前端](hot-front.md)
 - [关于我](http://mg.meiflower.top)
