@@ -2,6 +2,7 @@
 ## 2024-07-xx
 1. 完善readme，添加docsify auth插件。
 2. 新增插件篇菜单，内容指向docsify template里的插件特性说明。
+3. 新增插件开发示例内容。
 
 ## 2024-03-31
 1. 切换cdn到`https://cdn.jsdelivr.net/`，恢复访问。
