@@ -27,7 +27,7 @@ docsify s
 ## 微信交流群
 欢迎加入微信交流群，请加我微信并备注[`docsify-note交流`]，我会拉您进群！
 
-<img style="width:250px;" src="https://mg.meiflower.top/oss/docsify-note/mango-wx.jpeg">
+![](https://res.meiflower.top/.netlify/images?url=/docsify-note/mango-wx.jpeg&w=300)
 
 ## 相关资源
 * [docsify官方文档](https://docsify.js.org/#/zh-cn/) - 需要访问国外服务器，可能会404
